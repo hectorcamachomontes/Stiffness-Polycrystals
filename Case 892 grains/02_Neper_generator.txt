@@ -1,0 +1,8 @@
+neper -T -n from_morpho -morpho "diameq:lognormal(0.2,0.01)+1*lognormal(0.02,0.001),1-sphericity:lognormal(0.145,0.03)" -group "diameq>0.03?1:2" -morphooptiini "weight:radeq,coo:packing" -format geo -o test3
+neper -M 3d.tess -rcl "group==1?1:0.1" -elttype tet -order 1
+
+
+
+
+
+
